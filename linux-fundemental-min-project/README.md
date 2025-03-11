@@ -1,6 +1,6 @@
-# AWS EC2 Installation and Connection Guide
+# Mini Project-Linux Fundamentals
 
-This guide provides a step-by-step walkthrough for setting up an Amazon EC2 instance and connecting it to your local system.
+This is to introduce us to linux including setting up EC2 instance in AWS and connecting it using PUTTY or .pem file.
 
 ## Prerequisites
 
