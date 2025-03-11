@@ -1,6 +1,19 @@
 # Mini Project-Linux Fundamentals
 
 This is to introduce us to linux including setting up EC2 instance in AWS and connecting it using PUTTY or .pem file.
+## Table of Contents
+
+1. **Project Overview**
+   1.1 **Objectives**
+2. **Project Steps and Commands**
+   - 2.1 [Login into your AWS account]
+   - 2.2 [Create EC2]
+   - 2.3 [Download the .pem file]
+3. **Troubleshooting (Common Issues and Solutions)**
+   - 3.1 [Permission denial]
+   - 3.2 [Connection Timeout]
+   - 3.3 [Public IP Not Accessible]
+
 
 ## Prerequisites
 
