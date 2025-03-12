@@ -1,112 +1,12 @@
-# Mini Project-Linux Fundamentals
+# Mini Project-Linux Fundamental 
+This project combines Linux fundamentals with cloud computing by focusing on creating and managing an Amazon EC2 instance. It includes learning essential Linux commands, file system navigation, and shell scripting while also covering how to launch and configure an EC2 instance on AWS. The project guides you through securely connecting to the EC2 instance locally via SSH, setting up permissions, and performing basic administrative tasks. This hands-on approach bridges the gap between Linux skills and cloud environments, providing a solid foundation for system administration and cloud computing.
 
-This is to introduce us to linux including setting up EC2 instance in AWS and connecting it using PUTTY or .pem file.
-## Table of Contents
-
-1. **Project Overview**
-   1.1 **Objectives**
-2. **Project Steps and Commands**
-   - 2.1 [Login into your AWS account]
-   - 2.2 [Create EC2]
-   - 2.3 [Download the .pem file]
-3. **Troubleshooting (Common Issues and Solutions)**
-   - 3.1 [Permission denial]
-   - 3.2 [Connection Timeout]
-   - 3.3 [Public IP Not Accessible]
-
-
-## Prerequisites
-
-1. **AWS Account**: Ensure you have an active AWS account.
-2. **SSH Client**: Install an SSH client (e.g., OpenSSH, PuTTY) on your local machine.
-3. **IAM Permissions**: Ensure you have the required permissions to create and manage EC2 instances.
-
----
-
-## Step 1: Log in to the AWS Management Console
-
-1. Navigate to the [AWS Management Console](https://aws.amazon.com/console/).
-2. Log in with your AWS credentials.
-
----
-
-## Step 2: Launch an EC2 Instance
-
-1. In the AWS Management Console, search for "EC2" in the search bar and select **EC2** under "Services."
-2. Click on the **Launch Instance** button.
-3. Configure the following settings:
-   - **Name and Tags**: Enter a name for your instance (e.g., "MyEC2Instance").
-   - **Amazon Machine Image (AMI)**: Select an appropriate AMI (e.g., Amazon Linux 2 or Ubuntu).
-   - **Instance Type**: Choose an instance type (e.g., `t2.micro` for free-tier eligibility).
-   - **Key Pair**: Create a new key pair or select an existing one (download the `.pem` file if creating a new key pair).
-   - **Network Settings**: Configure the security group to allow SSH (port 22).
-   - **Storage**: Adjust the storage settings if needed.
-
-4. Click **Launch Instance** and wait for the instance to start.
-
----
-
-## Step 3: Retrieve the Public IP Address
-
-1. In the EC2 dashboard, navigate to the "Instances" section.
-2. Locate your instance and copy the **Public IPv4 address**.
-
----
-
-## Step 4: Configure Local System for SSH Access
-
-### For Linux/Mac:
-
-1. Open a terminal.
-2. Navigate to the directory where your key pair (`.pem` file) is located.
-3. Run the following command to set permissions for the key file:
-   ```bash
-   chmod 400 your-key-name.pem
-   ```
-
-### For Windows:
-
-1. If using PuTTY, convert the `.pem` file to a `.ppk` file using PuTTYgen.
-2. Open PuTTY and configure the following:
-   - **Host Name**: Enter `ec2-user@<Public-IP>` (replace `<Public-IP>` with the instance's public IP address).
-   - **SSH Authentication**: Load the `.ppk` file under "SSH > Auth."
-
----
-
-## Step 5: Connect to the EC2 Instance
-
-### Using SSH (Linux/Mac):
-
-1. Run the following command:
-   ```bash
-   ssh -i your-key-name.pem ec2-user@<Public-IP>
-   ```
-   - Replace `your-key-name.pem` with the name of your key file.
-   - Replace `<Public-IP>` with the instance's public IP address.
-
-2. If prompted, type "yes" to continue connecting.
-
-### Using PuTTY (Windows):
-
-1. Click **Open** in PuTTY to initiate the connection.
-2. Log in with the default username for your AMI (e.g., `ec2-user` for Amazon Linux 2).
-
----
-
-## Step 6: Verify the Connection
-
-1. Once connected, you should see the terminal of your EC2 instance.
-2. Test basic commands like `ls`, `pwd`, or `uname -a` to verify the environment.
-
----
-
-## Troubleshooting
-
-- **Connection Timeout**: Ensure that the security group allows inbound SSH traffic on port 22.
-- **Permission Denied**: Verify that the key file permissions are correct and that you are using the correct username for the AMI.
-- **Public IP Not Accessible**: Ensure the instance is in a public subnet and has an associated Elastic IP if necessary.
-
----
-
-You have now successfully set up and connected to an EC2 instance from your local system. Happy coding!
-
+## Project Objectives
+1. Understanding Linux Fundamentals
+   - Learn and practice basic Linux commands for file management, process control, and user management.
+   - Explore the Linux file system structure and permissions.
+   - Write and execute basic shell scripts for automation tasks.
+2. Setting up an EC2 Instance
+3. Securely Connecting to EC2
+4. Linux Administration on EC2
+5. Hands-on Cloud and Linux Integration
