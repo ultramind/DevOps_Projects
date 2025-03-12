@@ -16,14 +16,16 @@
 This project combines Linux fundamentals with cloud computing by focusing on creating and managing an Amazon EC2 instance. It includes learning essential Linux commands, file system navigation, and shell scripting while also covering how to launch and configure an EC2 instance on AWS. The project guides you through securely connecting to the EC2 instance locally via SSH, setting up permissions, and performing basic administrative tasks. This hands-on approach bridges the gap between Linux skills and cloud environments, providing a solid foundation for system administration and cloud computing.
 
 ## 1.1 Objectives
-1. Understanding Linux Fundamentals
-2. Setting up an EC2 Instance
-3. Securely Connecting to EC2
-4. Linux Administration on EC2
-5. Hands-on Cloud and Linux Integration
+The objectives of this project are to understand Linux fundamentals, set up an EC2 instance, securely connect to it, perform Linux administration tasks on EC2, and integrate cloud and Linux skills.
 
 ### Purpose
 The project guides you through securely connecting to the EC2 instance locally via SSH, setting up permissions, and performing basic administrative tasks.
+
+### Requirements
+This project requirement is setting up an EC2 instance and connecting via SSH.
+
+### Use case
+The use case is to provide a hands-on approach to learning Linux and cloud integration.
 
 
 ### Prerequisite
