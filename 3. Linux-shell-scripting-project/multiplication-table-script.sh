@@ -64,14 +64,14 @@ chmod +x multiplication_table.sh
 
 ### 3.1 Prompt for User Input
 ```sh
-echo "Enter a number: "
+echo "Enter any number: "
 read number
 ```
 ![User Input](https://github.com/user-attachments/assets/b033e9cf-facb-400b-b21a-11d9cea2094a)
 
 ### 3.2 Ask for Table Type (Full or Partial)
 ```sh
-echo "Choose: (1) Full Table (2) Partial Table"
+echo "Choose: (1)To run Full Table OR (2) Partial Table"
 read choice
 ```
 ![Table Choice](https://github.com/user-attachments/assets/05a87cd3-530a-495a-a0ab-21b95861b825)
@@ -87,9 +87,9 @@ done
 
 ### 3.4 Partial Multiplication Table
 ```sh
-echo "Enter start range:"
+echo "Choose your start range:"
 read start
-echo "Enter end range:"
+echo "Choose your end range:"
 read end
 for i in $(seq $start $end)
 do
@@ -101,7 +101,7 @@ done
 ### 3.5 Validate Input Range for Partial Table
 ```sh
 if [[ $start -gt $end ]]; then
-echo "Invalid range! Start must be less than or equal to End."
+echo "Invalid range! Start must be less than or equal to End range."
 exit 1
 fi
 ```
